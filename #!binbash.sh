@@ -364,7 +364,7 @@ configure_hysteria() {
     fi
     
     local masquerade_url="$sni_host"
-    local port="443"
+    local port="8443"
     
     mkdir -p /etc/hysteria
     
