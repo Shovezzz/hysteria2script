@@ -408,7 +408,7 @@ EOF
     local server_ip=$(get_ip)
     
     cat << EOF > /root/hysteria2.txt
-hysteria2://$auth_pwd@$server_ip:$port?mport&security=tls&sni=$sni_host&allowInsecure=true&alpn&obfs=salamander&obfs-password=$obfs_pwd#Test
+hysteria2://$auth_pwd@$server_ip:$port?sni=$sni_host&insecure=1&obfs=salamander&obfs-password=$obfs_pwd#Hysteria2-VPS
 EOF
 
     green "Настройка завершена!"
