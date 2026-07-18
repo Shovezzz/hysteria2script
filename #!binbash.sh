@@ -360,7 +360,7 @@ configure_hysteria() {
         local sni_host="$CUSTOM_SNI"
         yellow "Используется кастомный SNI: $sni_host"
     else
-        local sni_host="web.max.ru"
+        local sni_host="botapi.max.ru"
     fi
     
     local masquerade_url="$sni_host"
